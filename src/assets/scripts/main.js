@@ -15,11 +15,12 @@ import { render } from 'react-dom'
 
 import '../styles/main.scss'
 
+import logo from '../images/logo.png'
+
 const Home = () => (
   <div className="uoc-container">
     <picture>
-      <source srcSet="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-      <img src="./assets/images/logo.png?width=350" alt="test image" />
+      <img src={logo} className="uoc-logo" alt="test image" />
     </picture>
     <h1 className="uoc-title">Hello, UOC!</h1>
     <p>
