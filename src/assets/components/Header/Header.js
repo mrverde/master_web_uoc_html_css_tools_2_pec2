@@ -1,5 +1,5 @@
 import React from "react";
-import Router from "../Router"
+import NavLinks from "../NavLinks"
 
 const Header = props => {
 
@@ -10,7 +10,9 @@ const Header = props => {
         form: { label: "Form", href: "/form" },
     }
 
-    return <Router pages={pages} />
+    return <div className="header">
+        <NavLinks pages={pages} isHeader={true} />
+    </div>
 
 }
 

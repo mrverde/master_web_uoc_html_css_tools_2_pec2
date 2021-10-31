@@ -1,34 +1,35 @@
 import React from "react";
 import {
     BrowserRouter as Router,
-    Link
+    Switch,
+    Route
 } from "react-router-dom";
 
-import RouterSwitch from "./RouterSwitch"
+import PageBlog from "../PageBlog"
+import PageCharacters from "../PageCharacters"
+import PageForm from "../PageForm"
+import PageHome from "../PageHome"
+
 
 const router = props => {
-    const { pages } = props;
-
-    const generateNavElements = () => {
-        return Object.keys(pages).map((key, idx) => {
-            const currentKey = pages[key];
-
-            return <li key={`nav-${idx}-${key}`} className="nav-item">
-                <Link className={idx === 0 ? "nav-link active" : "nav-link"} to={currentKey["href"]}>{currentKey["label"]}</Link>
-            </li>
-
-        }
-        )
-    };
 
     return (
         <Router>
-            <div>
-                <ul className="nav">
-                    {generateNavElements()}
-                </ul>
-                <RouterSwitch />
-            </div>
+            {props.children}
+            <Switch>
+                <Route path="/characters">
+                    <PageCharacters />
+                </Route>
+                <Route path="/blog">
+                    <PageBlog />
+                </Route>
+                <Route path="/form">
+                    <PageForm />
+                </Route>
+                <Route path="/">
+                    <PageHome />
+                </Route>
+            </Switch>
         </Router>
     );
 }
