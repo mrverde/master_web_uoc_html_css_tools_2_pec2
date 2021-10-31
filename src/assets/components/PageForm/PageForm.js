@@ -15,6 +15,7 @@ const PageForm = () => {
             <DatePicker
                 {...field}
                 {...props}
+                className="form-control"
                 dateFormat="d/M/Y"
                 selected={(field.value && new Date(field.value)) || null}
                 onChange={val => {
