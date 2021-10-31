@@ -22,6 +22,11 @@ body {
   background-color: red;
   color: white;
   text-align: center;
+  z-index: 1;
 }
 
 .active {background-color:blue;}
+
+.page-container {
+  margin-bottom: 300px;
+}

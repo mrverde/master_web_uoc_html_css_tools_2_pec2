@@ -9,6 +9,7 @@ import PageBlog from "../PageBlog"
 import PageCharacters from "../PageCharacters"
 import PageForm from "../PageForm"
 import PageHome from "../PageHome"
+import ContainerPage from "../ContainerPage";
 
 
 const router = props => {
@@ -18,16 +19,24 @@ const router = props => {
             {props.children}
             <Switch>
                 <Route path="/characters">
-                    <PageCharacters />
+                    <ContainerPage>
+                        <PageCharacters />
+                    </ContainerPage>
                 </Route>
                 <Route path="/blog">
-                    <PageBlog />
+                    <ContainerPage>
+                        <PageBlog />
+                    </ContainerPage>
                 </Route>
                 <Route path="/form">
-                    <PageForm />
+                    <ContainerPage>
+                        <PageForm />
+                    </ContainerPage>
                 </Route>
                 <Route path="/">
-                    <PageHome />
+                    <ContainerPage>
+                        <PageHome />
+                    </ContainerPage>
                 </Route>
             </Switch>
         </Router>

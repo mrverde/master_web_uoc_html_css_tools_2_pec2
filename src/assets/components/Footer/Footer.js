@@ -12,6 +12,7 @@ const Footer = props => {
     }
 
     return <div className="footer">
+        <hr className="mt-3 mb-3" />
         <NavLinks pages={pages} />
         <SocialNetworksLinks />
     </div>
