@@ -5,7 +5,6 @@ import { faFacebook, faTwitter, faInstagram, faTiktok } from "@fortawesome/free-
 
 const SocialNetworksLinks = () => {
 
-
     return <>
         <a className="link" href="http://twitter.com" target="_blank">
             <FontAwesomeIcon icon={faTwitter} />

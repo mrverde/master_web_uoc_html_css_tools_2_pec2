@@ -1,14 +1,9 @@
 import React from "react";
-import NavLinks from "../NavLinks"
+import NavLinks from "../NavLinks";
 
-const Header = props => {
+import pages from "../../config/pages";
 
-    const pages = {
-        home: { label: "Home", href: "/" },
-        characters: { label: "Actors and characters", href: "/characters" },
-        blog: { label: "Blog", href: "/blog" },
-        form: { label: "Form", href: "/form" },
-    }
+const Header = () => {
 
     return <div className="header">
         <NavLinks pages={pages} isHeader={true} />

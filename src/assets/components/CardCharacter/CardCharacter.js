@@ -14,6 +14,3 @@ const CardCharacter = props => {
 }
 
 export default CardCharacter;
-
-
-
