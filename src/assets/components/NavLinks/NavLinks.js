@@ -16,7 +16,7 @@ const NavLinks = props => {
             const currentKey = pages[key];
 
             if (isHeader && currentKey["href"] === "/") {
-                return <></>
+                return <div key={`nav-${idx}-${key}`}></div>
             }
 
             return <li key={`nav-${idx}-${key}`} className={currentKey["href"] === location.pathname ? "nav-item active" : "nav-item"} >
