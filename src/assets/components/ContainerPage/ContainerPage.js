@@ -1,9 +1,9 @@
 import React from "react";
 
 const ContainerPage = props => {
-    return <div className="page-container">
+    return <main className="page-container">
         {props.children}
-    </div>
+    </main>
 }
 
 export default ContainerPage;

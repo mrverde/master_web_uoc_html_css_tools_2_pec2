@@ -6,9 +6,9 @@ import pages from "../../config/pages";
 const Header = () => {
     const pagesList = pages;
 
-    return <div className="header">
+    return <header className="header">
         <NavLinks pages={pagesList} isHeader={true} />
-    </div>
+    </header>
 
 }
 

@@ -3,11 +3,11 @@ import React from "react";
 import chineseTemple from '../../images/buddha-tempel-1468928.jpg'
 
 const PageBlog = props => {
-    return <>
-        <div class="jumbotron" >
-            <div class="container for-about">
-                <h1 class="display-4">Blog Article or Information / Bio Page</h1>
-                <p class="lead">by Author One</p>
+    return <article>
+        <div className="jumbotron" >
+            <div className="container for-about">
+                <h1 className="display-4">Blog Article or Information / Bio Page</h1>
+                <p className="lead">by Author One</p>
             </div>
         </div>
 
@@ -69,7 +69,7 @@ const PageBlog = props => {
             </p>
         </blockquote>
 
-    </>
+    </article>
 }
 
 export default PageBlog;
