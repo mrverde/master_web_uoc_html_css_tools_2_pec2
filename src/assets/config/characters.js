@@ -12,5 +12,40 @@ export default characters = [
         characterName: "Cheng Ying",
         actorName: "John Boo",
         chBack: "Far far away, behind the words mountains, far from the countries Vokalia and Consonantia"
+    },
+    {
+        img: char2,
+        imgAlt: "Yu Ming photo",
+        characterName: "Zhao Suo / Cheng Po",
+        actorName: "Yu Ming",
+        chBack: "Separated they live in Bookmarksgrove right at the coast of the Semantics"
+    },
+    {
+        img: char3,
+        imgAlt: "Zhao Tao photo",
+        characterName: "Tu'an Ku",
+        actorName: "Zhao Tao",
+        chBack: "A small river named Duden flows by their place and supplies it"
+    },
+    {
+        img: char4,
+        imgAlt: "Jack Chang photo",
+        characterName: "Han Jue",
+        actorName: "Jack Chang",
+        chBack: "It is a paradisematic country, in which roasted parts of sentences fly into your mouth"
+    },
+    {
+        img: char5,
+        imgAlt: "Zhang Yu photo",
+        characterName: "Gongsun Chujiu",
+        actorName: "Zhang Yu ",
+        chBack: "Even the all-powerful Pointing has no control about the blind texts"
+    },
+    {
+        img: char6,
+        imgAlt: "Ai Lee photo",
+        characterName: "Princess",
+        actorName: "Ai Lee",
+        chBack: "One day however a small line of blind text by the name of Lorem Ipsum"
     }
 ]

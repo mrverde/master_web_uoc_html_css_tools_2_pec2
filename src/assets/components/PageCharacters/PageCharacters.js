@@ -6,7 +6,7 @@ import characters from "../../config/characters";
 const PageCharacters = () => {
     const characterList = characters;
 
-    return <><h1 ar={console.log(characters)}>Actors and Characters</h1>
+    return <><h1>Actors and Characters</h1>
         {characterList.map((char, idx) => (
             <CardCharacter
                 key={`${char}-${idx}`}
@@ -14,7 +14,8 @@ const PageCharacters = () => {
                 imgAlt={char.imgAlt}
                 characterName={char.characterName}
                 actorName={char.actorName}
-                chBack={char.chBack} />
+            //chBack={char.chBack}
+            />
         ))}
     </>
 }
