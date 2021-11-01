@@ -1,6 +1,8 @@
 import React from "react";
-const PageHome = props => {
-    return <h1>PageHome</h1>
+const PageHome = () => {
+    return <div>
+        <h1>The Orphan of Zhao</h1>
+    </div>
 }
 
 export default PageHome;
