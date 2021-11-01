@@ -4,9 +4,10 @@ import NavLinks from "../NavLinks";
 import pages from "../../config/pages";
 
 const Header = () => {
+    const pagesList = pages;
 
     return <div className="header">
-        <NavLinks pages={pages} isHeader={true} />
+        <NavLinks pages={pagesList} isHeader={true} />
     </div>
 
 }

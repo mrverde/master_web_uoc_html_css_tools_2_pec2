@@ -4,8 +4,10 @@ import CardCharacter from "../CardCharacter"
 import characters from "../../config/characters";
 
 const PageCharacters = () => {
-    return <><h1>Actors and Characters</h1>
-        {characters.map((char, idx) => (
+    const characterList = characters;
+
+    return <><h1 ar={console.log(characters)}>Actors and Characters</h1>
+        {characterList.map((char, idx) => (
             <CardCharacter
                 key={`${char}-${idx}`}
                 img={char.img}
