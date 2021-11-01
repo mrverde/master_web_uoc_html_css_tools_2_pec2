@@ -14,7 +14,6 @@ const PageCharacters = () => {
                 imgAlt={char.imgAlt}
                 characterName={char.characterName}
                 actorName={char.actorName}
-            //chBack={char.chBack}
             />
         ))}
     </>

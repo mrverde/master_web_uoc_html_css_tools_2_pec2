@@ -8,7 +8,6 @@ const CardCharacter = props => {
         <div className="card-body">
             <p className="card-text">{characterName}</p>
             <p className="card-text">{actorName}</p>
-            {/* <p className="card-text">{chBack}</p> */}
         </div>
     </div>
 }
