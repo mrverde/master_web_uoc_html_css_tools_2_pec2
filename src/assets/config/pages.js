@@ -1,4 +1,4 @@
-export default pages = {
+export default {
     home: { label: "Home", href: "/" },
     characters: { label: "Actors and characters", href: "/characters" },
     blog: { label: "Blog", href: "/blog" },
