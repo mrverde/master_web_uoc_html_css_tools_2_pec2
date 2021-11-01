@@ -6,7 +6,6 @@ body {
   display: flex;
   height: 100vh;
   margin: 0;
-  padding: 2rem;
   font-family: $font-family-sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -29,4 +28,15 @@ body {
 
 .page-container {
   margin-bottom: 300px;
+}
+
+.img-back {
+  width: 100vw;
+  z-index: 0;
+}
+
+.jumbotron {
+  background-image: url("../images/life-live-light-1534795.jpg");
+  background-size: cover;
+  min-height: 700px;
 }
