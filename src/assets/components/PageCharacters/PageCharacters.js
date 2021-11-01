@@ -8,7 +8,7 @@ import char4 from '../images/04_char.jpeg'
 import char5 from '../images/05_char.jpeg'
 import char6 from '../images/06_char.jpeg'
 
-export default characters = [
+const characters = [
     {
         img: char1,
         imgAlt: "John Boo photo",
