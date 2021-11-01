@@ -3,9 +3,6 @@ import { Formik, Field, Form, useField, useFormikContext } from 'formik';
 import DatePicker from "react-datepicker";
 import * as Yup from 'yup';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "react-datepicker/dist/react-datepicker.css";
-
 const PageForm = () => {
 
     const DatePickerField = ({ ...props }) => {
