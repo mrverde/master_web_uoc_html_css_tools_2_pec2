@@ -47,5 +47,5 @@ export default characters = [
         characterName: "Princess",
         actorName: "Ai Lee",
         chBack: "One day however a small line of blind text by the name of Lorem Ipsum"
-    },
+    }
 ]
