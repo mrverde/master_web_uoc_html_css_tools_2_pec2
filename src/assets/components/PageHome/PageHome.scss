@@ -1,0 +1,61 @@
+.home {
+    background-image: url('../../images/actor-g1c051a08e_1920.jpg');
+    background-size: cover;
+    background-position-x: 60%;
+    display:grid;
+    grid-template-columns: 3fr minmax(200px, 1.5fr);
+    grid-template-rows: repeat(4, 25%);
+    position:absolute;
+    left: 0;
+    top: 105px;
+    width:100%;
+    height:100%;
+    grid-gap: 20px;
+    padding-left:20px;
+    max-height: 1200px;
+    }
+
+.home--background {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    min-width: 768px;
+    min-height: 800px; 
+}
+
+.square {
+    border-style: solid;
+    border-color: gray;
+    color:white;
+}
+
+.square-2 {
+    grid-row: span 3;
+    background-color: rgba(100, 100, 255, 0.7);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    margin-top: 20px;
+    margin-right: 20px;
+    padding-top: 20px;
+}
+
+.home--title {
+    font-size: max(3.5vw, 30px);
+    padding-right: 5%;
+    padding-left: 30%;
+    margin-bottom: 100px;
+}
+
+.home--subtitle {
+    font-size: max(1.5vw, 20px);
+    line-height: normal;
+    margin-top: 100px;
+    text-align: center;
+    padding-left: 25%;
+    padding-right: 35%;
+}
+
+.home--separator {
+    border: 4px solid white;
+    margin-right: 25%;
+    margin-left: 25%;
+}
