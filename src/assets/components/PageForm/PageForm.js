@@ -67,13 +67,13 @@ const PageForm = () => {
                             <div className="form-group">
                                 <label htmlFor="name">Name*</label>
                                 <Field name="name" className="form-control" type="text" />
-                                {errors.name && touched.name ? (<div>{errors.name}</div>) : null}
+                                {errors.name && touched.name ? (<div className="form--error">{errors.name}</div>) : null}
                             </div>
 
                             <div className="form-group">
                                 <label htmlFor="email">Email Address*</label>
                                 <Field name="email" className="form-control" type="email" />
-                                {errors.email && touched.email ? (<div>{errors.email}</div>) : null}
+                                {errors.email && touched.email ? (<div className="form--error">{errors.email}</div>) : null}
                             </div>
 
                             <div className="form-group">
@@ -83,17 +83,17 @@ const PageForm = () => {
                                         <option key={`opt-${el}`} value={el + 1}>{el + 1}</option>
                                     ))}
                                 </Field>
-                                {errors.tickets && touched.tickets ? (<div>{errors.tickets}</div>) : null}
+                                {errors.tickets && touched.tickets ? (<div className="form--error">{errors.tickets}</div>) : null}
                             </div>
 
                             <div className="form-group">
                                 <label htmlFor="date">Date of reservation:*</label>
                                 <DatePickerField name="date" />
-                                {errors.date ? (<div>{errors.date}</div>) : null}
+                                {errors.date ? (<div className="form--error">{errors.date}</div>) : null}
                             </div>
 
                             <div className="form-group">
-                                <button type="submit" className="btn btn-primary float-right" disabled={isSubmitting}>{isSubmitting ? "Please wait..." : "Submit"}</button>
+                                <button type="submit" className="btn btn-primary float-right form--submit-btn" disabled={isSubmitting}>{isSubmitting ? "Please wait..." : "Submit"}</button>
                             </div>
 
                         </Form>
