@@ -43,15 +43,19 @@
     padding-right: 5%;
     padding-left: 30%;
     margin-bottom: 100px;
+
+    @media (max-width: 768px) {
+        font-size: max(3.5vw, 24px);
+    }
 }
 
 .home--subtitle {
-    font-size: max(1.5vw, 20px);
+    font-size: max(1.5vw, 18px);
     line-height: normal;
     margin-top: 100px;
     text-align: center;
     padding-left: 25%;
-    padding-right: 35%;
+    padding-right: 35%;  
 }
 
 .home--separator {
