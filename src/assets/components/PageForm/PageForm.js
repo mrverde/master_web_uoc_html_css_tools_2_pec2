@@ -43,7 +43,7 @@ const PageForm = () => {
     return (
         <div className="form">
             <div className="form--container">
-                <h1>Ticket Reservation</h1>
+                <h1 className="header form--header">Ticket Reservation</h1>
                 <Formik
                     initialValues={
                         {

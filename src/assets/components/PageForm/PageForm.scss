@@ -1,20 +1,25 @@
+@import "../../styles/commonclasses";
+
 .form {
     width: 100vw;
-    display:flex;
+    display: flex;
     justify-content: center;
 }
 
 .form--container {
-    display:flex;
+    @extend .box-shadow-light;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0 15px;
-    max-width: 500px
+    max-width: 500px;
+    background-color: #fff;
+    padding: 30px;
 }
 
 .form--error {
     margin-top: 4px;
-    color: #DD0000;
+    color: #dd0000;
     font-size: 0.8rem;
 }
 
