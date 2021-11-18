@@ -3,6 +3,8 @@ import { Formik, Field, Form, useField, useFormikContext } from 'formik';
 import DatePicker from "react-datepicker";
 import * as Yup from 'yup';
 
+import "./PageForm.scss"
+
 const PageForm = () => {
 
     const DatePickerField = ({ ...props }) => {
@@ -39,64 +41,66 @@ const PageForm = () => {
     });
 
     return (
-        <>
-            <h1>Ticket Reservation</h1>
-            <Formik
-                initialValues={
-                    {
-                        name: '',
-                        email: '',
-                        tickets: '1',
-                        date: new Date()
+        <div className="form">
+            <div className="form--container">
+                <h1>Ticket Reservation</h1>
+                <Formik
+                    initialValues={
+                        {
+                            name: '',
+                            email: '',
+                            tickets: '1',
+                            date: new Date()
+                        }
                     }
-                }
-                validationSchema={SignupSchema}
+                    validationSchema={SignupSchema}
 
-                onSubmit={(values, { setSubmitting }) => {
-                    setTimeout(() => {
-                        alert(JSON.stringify(values, null, 2));
-                        setSubmitting(false);
-                    }, 1000);
-                }}
-            >
-                {({ isSubmitting, errors, touched }) => (
-                    <Form>
-                        <div className="form-group">
-                            <label htmlFor="name">Name</label>
-                            <Field name="name" className="form-control" type="text" />
-                            {errors.name && touched.name ? (<div>{errors.name}</div>) : null}
-                        </div>
+                    onSubmit={(values, { setSubmitting }) => {
+                        setTimeout(() => {
+                            alert(JSON.stringify(values, null, 2));
+                            setSubmitting(false);
+                        }, 1000);
+                    }}
+                >
+                    {({ isSubmitting, errors, touched }) => (
+                        <Form>
+                            <div className="form-group">
+                                <label htmlFor="name">Name*</label>
+                                <Field name="name" className="form-control" type="text" />
+                                {errors.name && touched.name ? (<div>{errors.name}</div>) : null}
+                            </div>
 
-                        <div className="form-group">
-                            <label htmlFor="email">Email Address</label>
-                            <Field name="email" className="form-control" type="email" />
-                            {errors.email && touched.email ? (<div>{errors.email}</div>) : null}
-                        </div>
+                            <div className="form-group">
+                                <label htmlFor="email">Email Address*</label>
+                                <Field name="email" className="form-control" type="email" />
+                                {errors.email && touched.email ? (<div>{errors.email}</div>) : null}
+                            </div>
 
-                        <div className="form-group">
-                            <label htmlFor="tickets">Number of Tickets:</label>
-                            <Field as="select" name="tickets">
-                                {[...Array(10).keys()].map((el) => (
-                                    <option key={`opt-${el}`} value={el + 1}>{el + 1}</option>
-                                ))}
-                            </Field>
-                            {errors.tickets && touched.tickets ? (<div>{errors.tickets}</div>) : null}
-                        </div>
+                            <div className="form-group">
+                                <label htmlFor="tickets">Number of Tickets:</label>
+                                <Field as="select" name="tickets">
+                                    {[...Array(10).keys()].map((el) => (
+                                        <option key={`opt-${el}`} value={el + 1}>{el + 1}</option>
+                                    ))}
+                                </Field>
+                                {errors.tickets && touched.tickets ? (<div>{errors.tickets}</div>) : null}
+                            </div>
 
-                        <div className="form-group">
-                            <label htmlFor="date">Date of reservation:</label>
-                            <DatePickerField name="date" />
-                            {errors.date ? (<div>{errors.date}</div>) : null}
-                        </div>
+                            <div className="form-group">
+                                <label htmlFor="date">Date of reservation:*</label>
+                                <DatePickerField name="date" />
+                                {errors.date ? (<div>{errors.date}</div>) : null}
+                            </div>
 
-                        <div className="form-group">
-                            <button type="submit" className="btn btn-primary" disabled={isSubmitting}>{isSubmitting ? "Please wait..." : "Submit"}</button>
-                        </div>
+                            <div className="form-group">
+                                <button type="submit" className="btn btn-primary float-right" disabled={isSubmitting}>{isSubmitting ? "Please wait..." : "Submit"}</button>
+                            </div>
 
-                    </Form>
-                )}
-            </Formik>
-        </>
+                        </Form>
+                    )}
+                </Formik>
+            </div>
+        </div>
     );
 };
 

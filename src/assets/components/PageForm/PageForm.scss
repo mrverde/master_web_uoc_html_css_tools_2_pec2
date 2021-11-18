@@ -1,0 +1,13 @@
+.form {
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+}
+
+.form--container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 15px;
+    max-width: 500px
+}
