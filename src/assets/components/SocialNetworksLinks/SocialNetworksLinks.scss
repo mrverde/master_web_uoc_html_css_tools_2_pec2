@@ -1,0 +1,12 @@
+@use "sass:color";
+$link-color: #2222DD;
+
+.icon--link {
+    font-size: 40px;
+    margin: 15px 20px;
+    color: $link-color;
+
+    &:hover {
+        color: lighten($link-color, 15%);
+    }
+}

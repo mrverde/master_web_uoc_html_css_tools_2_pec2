@@ -1,0 +1,17 @@
+$color-secondary: #666;
+
+.footer {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    background-color: $color-secondary;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.footer--icon-container {
+    margin-right: 15px;
+}

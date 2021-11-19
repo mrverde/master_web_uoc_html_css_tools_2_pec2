@@ -3,14 +3,14 @@ import NavLinks from "../NavLinks"
 import SocialNetworksLinks from "../SocialNetworksLinks";
 
 import pages from "../../config/pages";
+import "./Footer.scss";
 
 const Footer = () => {
     const pagesList = pages;
 
     return <footer className="footer">
-        <hr className="mt-3 mb-3" />
         <NavLinks pages={pagesList} />
-        <SocialNetworksLinks />
+        <SocialNetworksLinks classes={{ containerClass: "footer--icon-container" }} />
     </footer>
 }
 
