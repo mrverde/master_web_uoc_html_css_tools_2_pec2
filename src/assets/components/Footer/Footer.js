@@ -10,7 +10,7 @@ const Footer = () => {
 
     return <footer className="footer">
         <NavLinks pages={pagesList} />
-        <SocialNetworksLinks classes={{ containerClass: "footer--icon-container" }} />
+        <SocialNetworksLinks classes={{ containerClass: "footer-icon-container" }} />
     </footer>
 }
 

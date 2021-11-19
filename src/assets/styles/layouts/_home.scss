@@ -11,10 +11,12 @@ body {
   line-height: 24px;
   background-color: $bg-color;
   color: $uoc-corporate;
-  width:100%;
+  width: 100%;
 }
 
-.active {background-color:blue;}
+.active {
+  background-color: #00f;
+}
 
 .img-back {
   width: 100vw;

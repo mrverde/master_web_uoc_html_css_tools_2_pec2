@@ -1,0 +1,13 @@
+{
+    "extends": "stylelint-config-standard-scss",
+    "plugins": [
+        "stylelint-scss"
+    ],
+    "rules": {
+        "indentation": 2,
+        "color-named": "never",
+        "at-rule-no-unknown": null,
+        "scss/at-rule-no-unknown": true,
+        "scss/no-global-function-names": null
+    }
+}

@@ -1,28 +1,29 @@
 @import "../../styles/commonclasses";
 
 .form {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 }
 
-.form--container {
-    @extend .box-shadow-light;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 15px;
-    max-width: 500px;
-    background-color: #fff;
-    padding: 30px;
+.form-container {
+  @extend %box-shadow-light;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 15px;
+  max-width: 500px;
+  background-color: #fff;
+  padding: 30px;
 }
 
-.form--error {
-    margin-top: 4px;
-    color: #dd0000;
-    font-size: 0.8rem;
+.form-error {
+  margin-top: 4px;
+  color: #d00;
+  font-size: 0.8rem;
 }
 
-.form--submit-btn {
-    margin-top: 10px;
+.form-submit-btn {
+  margin-top: 10px;
 }
