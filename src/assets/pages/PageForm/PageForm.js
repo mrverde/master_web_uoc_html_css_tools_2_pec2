@@ -30,7 +30,6 @@ const PageForm = () => {
                 alert(error)
             })
             .finally(() => actions.setSubmitting(false))
-        console.log('Form data_1', values, actions)
     }
 
     const DatePickerField = ({ ...props }) => {
@@ -85,7 +84,6 @@ const PageForm = () => {
                 >
                     {({ isSubmitting, errors, touched }) => (
                         <Form name="contact" data-netlify={true} >
-                            <input type="hidden" name="form-name" value="contact" />
                             <div className="form-group">
                                 <label htmlFor="name">Name*</label>
                                 <Field name="name" className="form-control" type="text" />
