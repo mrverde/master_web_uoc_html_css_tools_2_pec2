@@ -66,7 +66,11 @@
     color: $link-color-hover;
   }
 
-  @media (max-width: 910px) {
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+
+  @media (min-width: 769) and (max-width: 910px) {
     font-size: 1.2rem;
   }
 
