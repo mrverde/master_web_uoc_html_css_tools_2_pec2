@@ -7,6 +7,7 @@ import "./PageHome.scss"
 const PageHome = () => {
     useEffect(() => {
         document.body.classList.add("overflowy-hidden");
+        window.scrollTo(0, 0);
         return () => {
             document.body.classList.remove("overflowy-hidden");
         };
