@@ -1,6 +1,5 @@
 @use "sass:color";
-
-$link-color: #22d;
+@import "../../styles/variables";
 
 .icon-link {
   font-size: 40px;
@@ -8,6 +7,6 @@ $link-color: #22d;
   color: $link-color;
 
   &:hover {
-    color: color.adjust($link-color, $lightness: 15%);
+    color: $link-color-hover;
   }
 }

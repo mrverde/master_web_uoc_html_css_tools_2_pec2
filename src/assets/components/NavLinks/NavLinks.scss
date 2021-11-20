@@ -1,4 +1,25 @@
-.nav-container {
-  display: flex;
-  justify-content: space-between;
+.nav {
+  flex-wrap: nowrap !important;
+  align-items: stretch;
+}
+
+.nav-item {
+  height: 100%;
+  padding: 8px;
+}
+
+.nav-link {
+  white-space: nowrap;
+}
+
+.nav-logo__footer {
+  align-items: center;
+  margin:auto;
+}
+
+.nav-container__footer {
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 }

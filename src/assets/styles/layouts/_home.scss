@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+#app {
+  width: 100%;
+}
+
 body {
   display: flex;
   height: 100vh;
@@ -11,7 +15,6 @@ body {
   line-height: 24px;
   background-color: $bg-color;
   color: $uoc-corporate;
-  width: 100%;
 }
 
 .active {

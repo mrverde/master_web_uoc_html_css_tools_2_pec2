@@ -37,7 +37,7 @@ const NavLinks = props => {
     };
 
     return <div className={`nav-container nav-container__${classGen}`}>
-        <img className={`nav-logo__${classGen}`} src={logo} width="150" />
+        {isHeader && <img className={`nav-logo__${classGen}`} src={logo} width="100" />}
         <ul className={`nav nav__${classGen}`}  >
             {generateNavElements()}
         </ul >
