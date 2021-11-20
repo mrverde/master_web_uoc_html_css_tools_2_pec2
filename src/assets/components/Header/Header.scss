@@ -3,8 +3,19 @@
 
 .header {
   background-color: $color-secondary;
-  height: 70px;
+  height: 60px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+}
+
+.nav-container__header {
+  @media (max-width: 768px) {
+    display: none;
+  }
+  
 }
