@@ -83,7 +83,7 @@ const PageForm = () => {
                     onSubmit={onSubmit}
                 >
                     {({ isSubmitting, errors, touched }) => (
-                        <Form name="contact" data-netlify="true" method="POST" >
+                        <Form name="contact" data-netlify="true" >
                             <input type="hidden" name="form-name" value="contact" />
                             <div className="form-group">
                                 <label htmlFor="name">Name*</label>
