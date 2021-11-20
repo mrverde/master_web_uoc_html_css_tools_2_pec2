@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Formik, Field, Form, useField, useFormikContext } from 'formik';
 import DatePicker from "react-datepicker";
 import * as Yup from 'yup';
@@ -6,14 +6,6 @@ import * as Yup from 'yup';
 import "./PageForm.scss"
 
 const PageForm = () => {
-    useEffect(() => {
-        document.body.classList.add("overflowy-hidden");
-        window.scrollTo(0, 0);
-        return () => {
-            document.body.classList.remove("overflowy-hidden");
-        };
-    }, []);
-
     const DatePickerField = ({ ...props }) => {
         const { setFieldValue } = useFormikContext();
         const [field] = useField(props);
