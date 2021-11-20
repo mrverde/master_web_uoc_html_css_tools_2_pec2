@@ -1,3 +1,64 @@
+@import "variables";
+
+@function stroke($stroke, $color) {
+  $shadow: ();
+  $from: $stroke * -1;
+
+  @for $i from $from through $stroke {
+    @for $j from $from through $stroke {
+      $shadow: append($shadow, $i * 1px $j * 1px 0 $color, comma);
+    }
+  }
+
+  @return $shadow;
+}
+
+@mixin stroke($stroke, $color) {
+  text-shadow: stroke($stroke, $color);
+}
+
 %box-shadow-light {
   box-shadow: rgb(149 157 165 / 20%) 0 8px 24px;
+}
+
+%trailing-commas {
+  &::before {
+    content: '"';
+  }
+
+  &::after {
+    content: '"';
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#app {
+  width: 100%;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  font-family: $font-family-sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: $bg-color;
+  color: $uoc-corporate;
+}
+
+.header {
+  margin-bottom: 30px;
+}
+
+.img-back {
+  width: 100vw;
+  z-index: 0;
+}
+
+.overflowy-hidden {
+  overflow-y: hidden;
 }

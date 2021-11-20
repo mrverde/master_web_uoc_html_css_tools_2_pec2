@@ -26,13 +26,7 @@
 }
 
 .card-text_background {
-  &::before {
-    content: '"';
-  }
-
-  &::after {
-    content: '"';
-  }
+  @extend %trailing-commas;
 
   font-style: italic;
 }

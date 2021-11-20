@@ -1,0 +1,86 @@
+@import "../../styles/commonclasses";
+
+.blog-container {
+  @extend %box-shadow-light;
+
+  margin: 30px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.blog-jumbotron-text {
+  @include stroke(2, #000);
+}
+
+.blog-jumbotron-author {
+  @include stroke(2, #000);
+}
+
+.blog-subcontainer {
+  background-color: #fff;
+  padding: 30px;
+  max-width: 1024px;
+}
+
+.blog-jumbotron-container {
+  width: 100%;
+  margin: 0;
+}
+
+.blog-jumbotron {
+  margin: 0;
+  background-image: url("../../images/life-live-light-1534795.png");
+  background-size: cover;
+  min-height: 300px;
+  color: #fff;
+}
+
+.blog-image {
+  display: block;
+  width: 95%;
+  margin: 30px auto;
+}
+
+.blog-quote {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+  font-size: 0.9em;
+}
+
+.blog-paragraph_quote {
+  @extend %trailing-commas;
+
+  max-width: 50%;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.blog-list {
+  margin: 20px 0;
+  padding: 50px auto;
+}
+
+.blog-list-element {
+  list-style-type: none;
+}
+
+.blog-list-element-header {
+  font-weight: bold;
+}
+
+.blog-paragraph_endline {
+  margin-bottom: 40px;
+}
+
+.blog-paragraph_startline {
+  margin-top: 40px;
+}
+
+.blog-paragraph_header {
+  font-weight: bold;
+}
