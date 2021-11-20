@@ -6,6 +6,32 @@ import * as Yup from 'yup';
 import "./PageForm.scss"
 
 const PageForm = () => {
+
+    const encode = (data) => {
+        return Object.keys(data)
+            .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+            .join("&")
+    }
+
+    const onSubmit = (values, actions) => {
+        fetch("/", {
+            method: 'POST',
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({
+                'form-name': 'contact',
+                ...values
+            }),
+        })
+            .then(() => {
+                alert('Success')
+                actions.resetForm()
+            })
+            .catch((error) => {
+                alert(error)
+            })
+        console.log('Form data_1', values, actions)
+    }
+
     const DatePickerField = ({ ...props }) => {
         const { setFieldValue } = useFormikContext();
         const [field] = useField(props);
@@ -54,15 +80,10 @@ const PageForm = () => {
                     }
                     validationSchema={SignupSchema}
 
-                    onSubmit={(values, { setSubmitting }) => {
-                        setTimeout(() => {
-                            alert(JSON.stringify(values, null, 2));
-                            setSubmitting(false);
-                        }, 1000);
-                    }}
+                    onSubmit={onSubmit}
                 >
                     {({ isSubmitting, errors, touched }) => (
-                        <Form>
+                        <Form name="contact" className="form" >
                             <div className="form-group">
                                 <label htmlFor="name">Name*</label>
                                 <Field name="name" className="form-control" type="text" />
