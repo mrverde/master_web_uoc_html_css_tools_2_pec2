@@ -29,6 +29,7 @@ const PageForm = () => {
             .catch((error) => {
                 alert(error)
             })
+            .finally(() => actions.setSubmitting(false))
         console.log('Form data_1', values, actions)
     }
 
