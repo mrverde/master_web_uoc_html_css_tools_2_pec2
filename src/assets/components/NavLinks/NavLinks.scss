@@ -12,25 +12,25 @@
 
 .nav-link {
   white-space: nowrap;
-  color: #fff;
+  color: $color-secondary;
 
   &:hover {
-    color: $link-color-hover;
+    color: $color-secondary-hover;
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: $mq-min-width) {
     font-size: 0.8rem;
   }
 
-  @media (min-width: 501) and (max-width: 768px) {
+  @media (min-width: $mq-min-width + 1) and (max-width: $mq-tablet-width) {
     font-size: 1rem;
   }
 
-  @media (min-width: 769) and (max-width: 910px) {
+  @media (min-width: $mq-tablet-width + 1) and (max-width: $mq-maxitablet-width) {
     font-size: 1.2rem;
   }
 
-  @media (min-width: 911px) {
+  @media (min-width: $mq-maxitablet-width + 1) {
     font-size: 1.5rem;
   }
 }
@@ -41,7 +41,7 @@
 }
 
 .nav-container__footer {
-  @media (max-width: 768px) {
+  @media (max-width: $mq-tablet-width) {
     flex-direction: column;
     justify-content: center;
   }

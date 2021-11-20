@@ -18,7 +18,7 @@
 }
 
 .blog-subcontainer {
-  background-color: #fff;
+  background-color: $color-secondary;
   padding: 30px;
   max-width: 1024px;
 }
@@ -33,7 +33,7 @@
   background-image: url("../../images/life-live-light-1534795.jpg");
   background-size: cover;
   min-height: 300px;
-  color: #fff;
+  color: $color-secondary;
 }
 
 .blog-image {

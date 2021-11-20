@@ -2,19 +2,19 @@
 @import "../../styles/variables";
 
 .header {
-  background-color: $color-secondary;
+  background-color: $color-primary;
   height: 60px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 
-  @media (max-width: 768px) {
+  @media (max-width: $mq-tablet-width) {
     justify-content: center;
   }
 }
 
 .nav-container__header {
-  @media (max-width: 768px) {
+  @media (max-width: $mq-tablet-width) {
     display: none;
   }
 }

@@ -1,13 +1,15 @@
+@import "../../styles/variables";
+
 .header-logo {
   border-style: solid;
   margin: 5px;
   padding: 2px 10px;
-  color: #fff;
+  color: $color-secondary;
 }
 
 .header-logo-text {
   font-size: 2rem;
-  font-family: Anton, sans-serif;
+  font-family: $secondary-font;
   white-space: nowrap;
   margin-bottom: 0;
 }

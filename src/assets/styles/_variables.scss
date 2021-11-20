@@ -1,14 +1,14 @@
 @use "sass:color";
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
-$font-family-sans-serif: -apple-system, blinkmacsystemfont, "Segoe UI", roboto,
+$primary-font: -apple-system, blinkmacsystemfont, "Segoe UI", roboto,
   "Helvetica Neue", arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
   "Segoe UI Symbol";
-$font-family-serif: "Georgia", "Times New Roman", serif;
-$uoc-corporate: #000078;
-$uoc-masterbrand: #73edff;
+$secondary-font: anton, sans-serif;
+$mq-min-width: 500px;
+$mq-tablet-width: 768px;
+$mq-maxitablet-width: 900px;
 $bg-color: #ebedee;
-$mq-min-width: 420px;
-$color-secondary: #534ab7;
-$link-color: #fff;
-$link-color-hover: color.adjust($link-color, $blackness: 50%);
+$color-primary: #534ab7;
+$color-secondary: #fff;
+$color-secondary-hover: color.adjust($color-secondary, $blackness: 50%);
