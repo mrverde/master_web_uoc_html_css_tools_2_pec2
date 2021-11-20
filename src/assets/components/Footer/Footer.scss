@@ -62,27 +62,3 @@
 .active__footer {
   background-color: color.adjust($color-secondary, $blackness: 40%);
 }
-
-.nav-link__footer {
-  color: #fff;
-
-  &:hover {
-    color: $link-color-hover;
-  }
-
-  @media (max-width: 500px) {
-    font-size: 0.8rem;
-  }
-
-  @media (min-width: 501) and (max-width: 768px) {
-    font-size: 1rem;
-  }
-
-  @media (min-width: 769) and (max-width: 910px) {
-    font-size: 1.2rem;
-  }
-
-  @media (min-width: 911px) {
-    font-size: 1.5rem;
-  }
-}

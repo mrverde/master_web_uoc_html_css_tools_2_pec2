@@ -4,7 +4,6 @@ import {
     useLocation
 } from "react-router-dom";
 
-import logo from '../../images/logoblue.png'
 import "./NavLinks.scss"
 
 const NavLinks = props => {
@@ -19,7 +18,7 @@ const NavLinks = props => {
             const currentKey = pages[key];
 
             if (isHeader && currentKey["href"] === "/") {
-                return <></>
+                return <div key="nav-home"></div>
             }
 
             return <li key={`nav-${idx}-${key}`}
@@ -37,7 +36,6 @@ const NavLinks = props => {
     };
 
     return <div className={`nav-container nav-container__${classGen}`}>
-        {isHeader && <img className={`nav-logo__${classGen}`} src={logo} width="100" />}
         <ul className={`nav nav__${classGen}`}  >
             {generateNavElements()}
         </ul >

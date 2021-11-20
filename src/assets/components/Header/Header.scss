@@ -1,0 +1,10 @@
+@use "sass:color";
+@import "../../styles/variables";
+
+.header {
+  background-color: $color-secondary;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
