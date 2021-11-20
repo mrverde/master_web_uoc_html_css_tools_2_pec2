@@ -5,9 +5,6 @@
   background-image: url("../../images/actor-g1c051a08e_1920.jpg");
   background-size: cover;
   background-position-x: 60%;
-  display: grid;
-  grid-template-columns: 3fr minmax(200px, 1.5fr);
-  grid-template-rows: repeat(4, 25%);
   position: absolute;
   left: 0;
   top: 60px;
@@ -18,6 +15,53 @@
   max-height: 1200px;
 }
 
+@supports (display: grid) {
+  .home {
+    display: grid;
+    grid-template-columns: 3fr minmax(200px, 1.5fr);
+    grid-template-rows: repeat(4, 25%);
+  }
+
+  .square {
+    color: $color-secondary;
+  }
+
+  .square-2 {
+    grid-row: span 4;
+    background-color: rgb(100 100 255 / 70%);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    margin-right: 20px;
+    padding-top: 20px;
+  }
+
+  .home-title {
+    font-size: calc(max(3.5vw, 30px));
+    padding-right: 5%;
+    padding-left: 30%;
+    margin-bottom: 100px;
+    font-family: $secondary-font;
+
+    @media (max-width: $mq-tablet-width) {
+      font-size: calc(max(3.5vw, 24px));
+    }
+  }
+
+  .home-subtitle {
+    font-size: calc(max(1.5vw, 18px));
+    line-height: normal;
+    margin-top: 130px;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 35%;
+  }
+
+  .home-separator {
+    border: 4px solid $color-secondary;
+    margin-right: 25%;
+    margin-left: 25%;
+  }
+}
+
 .home-background {
   object-fit: cover;
   width: 100%;
@@ -26,41 +70,31 @@
   min-height: 800px;
 }
 
-.square {
-  color: $color-secondary;
-}
+@supports not (display: grid) {
+  .home-title {
+    color: $color-secondary;
+    font-size: 4rem;
+    margin-left: 100px;
+    margin-top: 40px;
 
-.square-2 {
-  grid-row: span 4;
-  background-color: rgb(100 100 255 / 70%);
-  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-  margin-right: 20px;
-  padding-top: 20px;
-}
-
-.home-title {
-  font-size: calc(max(3.5vw, 30px));
-  padding-right: 5%;
-  padding-left: 30%;
-  margin-bottom: 100px;
-  font-family: $secondary-font;
-
-  @media (max-width: $mq-tablet-width) {
-    font-size: calc(max(3.5vw, 24px));
+    @media (max-width: $mq-tablet-width) {
+      font-size: 2rem;
+    }
   }
-}
 
-.home-subtitle {
-  font-size: calc(max(1.5vw, 18px));
-  line-height: normal;
-  margin-top: 130px;
-  text-align: center;
-  padding-left: 20%;
-  padding-right: 35%;
-}
+  .home-subtitle {
+    color: $color-secondary;
+    margin-left: 100px;
+    font-size: 1.5rem;
+  }
 
-.home-separator {
-  border: 4px solid $color-secondary;
-  margin-right: 25%;
-  margin-left: 25%;
+  .square-2 {
+    background-color: rgb(83 74 123 / 50%);
+    width: 25vw;
+    min-width: 400px;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    border-radius: 100px;
+  }
 }
