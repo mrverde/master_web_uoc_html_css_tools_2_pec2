@@ -5,11 +5,11 @@ import {
     Route
 } from "react-router-dom";
 
-import PageBlog from "../PageBlog"
-import PageCharacters from "../PageCharacters"
-import PageForm from "../PageForm"
-import PageHome from "../PageHome"
-import ContainerPage from "../ContainerPage";
+import PageBlog from "../../pages/PageBlog"
+import PageCharacters from "../../pages/PageCharacters"
+import PageForm from "../../pages/PageForm"
+import PageHome from "../../pages/PageHome"
+import ContainerPage from "../../components/ContainerPage";
 
 
 const router = props => {

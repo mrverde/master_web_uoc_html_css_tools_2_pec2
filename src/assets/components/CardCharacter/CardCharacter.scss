@@ -1,0 +1,39 @@
+@import "../../styles/commonclasses";
+
+.card {
+  @extend %box-shadow-light;
+
+  max-width: 500px;
+  margin: 30px;
+}
+
+.card-image-container {
+  display: inline-block;
+}
+
+.card-text {
+  padding: 0 15px;
+}
+
+.card-text_character {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 0px
+}
+
+.card-text_actor {
+  font-weight: bold;
+}
+
+.card-text_background {
+
+  &::before {
+    content: '"';
+  }
+
+  &::after {
+    content: '"';
+  }
+
+  font-style: italic;
+}
