@@ -15,10 +15,10 @@ const PageBlog = () => {
         </div>
         <div className="blog-container">
             <div className="blog-subcontainer">
-                <p className="blog-paragraph blog-paragraph_header">Far far away, behind the word mountains, far from the countries Vokalia and
+                <p className="blog-paragraph blog-paragraph__header">Far far away, behind the word mountains, far from the countries Vokalia and
                     Consonantia, there live the blind texts.</p>
                 <blockquote className="blog-quote" cite="https://es.wikiquote.org/wiki/Buda_Gautama">
-                    <p className="blog-paragraph blog-paragraph_quote">
+                    <p className="blog-paragraph blog-paragraph__quote">
                         Far far away, behind the word mountains, far from the countries Vokalia and
                         Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right
                         at the coast of the Semantics, a large language ocean. Far far away, behind the
@@ -26,7 +26,7 @@ const PageBlog = () => {
                     <strong>Zu Ming Yu</strong>
                 </blockquote>
 
-                <p className="blog-paragraph blog-paragraph_endline">Far far away, behind the word mountains, far from the countries Vokalia and
+                <p className="blog-paragraph blog-paragraph__endline">Far far away, behind the word mountains, far from the countries Vokalia and
                     Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right
                     at the coast of the Semantics, a large language ocean. Far far away, behind the
                     word mountains. Far far away, behind the word mountains, far from the countries
@@ -53,7 +53,7 @@ const PageBlog = () => {
                     </li>
                 </ol>
                 <hr className="mt-3 mb-3" />
-                <p className="blog-paragraph blog-paragraph_header blog-paragraph_startline">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                <p className="blog-paragraph blog-paragraph_header blog-paragraph__startline">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
                 <p className="blog-paragraph">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
                     there live the blind texts. Separated they live in Bookmarksgrove right at the coast
                     of the Semantics, a large language ocean. Far far away, behind the word mountains, far
@@ -61,13 +61,12 @@ const PageBlog = () => {
                     live in Bookmarksgrove</p>
                 <img className="blog-image" src={chineseTemple} alt="Chinese temple" />
                 <blockquote className="blog-quote" cite="https://es.wikiquote.org/wiki/Buda_Gautama">
-                    <p className="blog-paragraph blog-paragraph_quote">
+                    <p className="blog-paragraph blog-paragraph__quote">
                         Far far away, behind the word mountains, far from the countries Vokalia and
                         Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right
                         at the coast of the Semantics, a large language ocean. Far far away, behind the
                         word mountains. </p><br />
                     <strong>Zu Ming Yu</strong>
-
                 </blockquote>
             </div>
         </div>

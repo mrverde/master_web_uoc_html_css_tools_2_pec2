@@ -10,9 +10,9 @@ const CardCharacter = props => {
             <img src={img} className="card-img-top" alt={imgAlt} />
         </div>
         <div className="card-body">
-            <p className="card-text card-text_character">{characterName}</p>
-            <p className="card-text card-text_actor">{actorName}</p>
-            <p className="card-text card-text_background">{chBack}</p>
+            <p className="card-text card-text__character">{characterName}</p>
+            <p className="card-text card-text__actor">{actorName}</p>
+            <p className="card-text card-text__background">{chBack}</p>
         </div>
     </div>
 }

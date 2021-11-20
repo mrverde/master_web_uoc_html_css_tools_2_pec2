@@ -15,17 +15,17 @@
   padding: 0 15px;
 }
 
-.card-text_character {
+.card-text__character {
   font-weight: bold;
   font-size: 1.5rem;
   margin-bottom: 0;
 }
 
-.card-text_actor {
+.card-text__actor {
   font-weight: bold;
 }
 
-.card-text_background {
+.card-text__background {
   @extend %trailing-commas;
 
   font-style: italic;

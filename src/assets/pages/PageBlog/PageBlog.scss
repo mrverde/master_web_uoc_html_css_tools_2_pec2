@@ -1,5 +1,9 @@
 @import "../../styles/commonclasses";
 
+.blog {
+  padding-bottom: 40px;
+}
+
 .blog-container {
   @extend %box-shadow-light;
 
@@ -51,7 +55,7 @@
   font-size: 0.9em;
 }
 
-.blog-paragraph_quote {
+.blog-paragraph__quote {
   @extend %trailing-commas;
 
   max-width: 50%;
@@ -73,14 +77,14 @@
   font-weight: bold;
 }
 
-.blog-paragraph_endline {
+.blog-paragraph__endline {
   margin-bottom: 40px;
 }
 
-.blog-paragraph_startline {
+.blog-paragraph__startline {
   margin-top: 40px;
 }
 
-.blog-paragraph_header {
+.blog-paragraph__header {
   font-weight: bold;
 }
