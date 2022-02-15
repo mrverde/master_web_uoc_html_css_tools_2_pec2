@@ -1,62 +1,20 @@
-# UOC Boilerplate
+# PEC2
 
-UOC Boilerplate is a starter template for the HTML and CSS Tools courses from the [Master's Program in Multimedia Applications](https://estudis.uoc.edu/ca/masters-universitaris/aplicacions-multimedia/presentacio) and the [Master's Program in Web App and Website Development](https://estudis.uoc.edu/ca/masters-universitaris/desenvolupament-llocs-aplicacions-web/presentacio) at the [Universitat Oberta de Catalunya](https://www.uoc.edu). It aims to provide a basic, modern frontend web development starter pack based on Parcel and including a Sass compiler, an ES6 transpiler, minifiers, an image transformer, and development tools.
 
-This is the 3.x version of UOC Boilerplate, available since the UOC 2020-2 semester.
+Link - https://keen-lumiere-ced9f8.netlify.app/
 
-## Requirements
+---
 
-[Node.js](http://nodejs.org/) >= 14.15.x
+# La obra de teatro The orphan of Zhao
 
-## Getting started
+Trabajo realizado para la segunda práctica de la asignatura [Herramientas HTML y CSS 2](https://cv.uoc.edu/tren/trenacc/web/GAT_EXP.PLANDOCENTE?any_academico=20212&cod_asignatura=M4.258&idioma=CAS&pagina=PD_PREV_SECRE&cache=S) del master de desarrollo de sitios y aplicaciones web de la UOC.
 
-Clone this repository with `git clone`, or download a .zip file using the top right green button.
+La práctica consistía en el desarrollo de una página de una compañía de teatro, en la que aplicar CSS semántico con metodología BEM. Proyecto realizado con React. 
 
-Using the Terminal, navigate to the project folder and run `npm install`.
+---
 
-## Features
+# The theatre play The orphan of Zhao
 
-- Uses [Parcel v2](https://parceljs.org) module bundler.
-- NPM scripts for fast development and production build (see Commands below).
+Work done for the second practice of the subject [HTML and CSS Tools 2](https://cv.uoc.edu/tren/trenacc/web/GAT_EXP.PLANDOCENTE?any_academico=20212&cod_asignatura=M4.258&idioma=CAS&pagina=PD_PREV_SECRE&cache=S) of the master's degree in website and web application development at the UOC.
 
-### Stylesheets
-
-- [Sass/SCSS](https://sass-lang.com) to CSS compilation.
-- [PostCSS](https://postcss.org/) features:
-  - Transpile modern CSS with [`postcss-preset-env`](https://preset-env.cssdb.org/features).
-  - Automatically add CSS prefix to unsupported properties with [`autoprefixer`](https://autoprefixer.github.io/).
-  - Automatically minify and optimize CSS code on production build with `@parcel/optimizer-cssnano`.
-
-### Scripts
-
-- Allow for modern JavaScript (ES201x/ES8/ES7/ES6…) which is automatically transpiled to ES5 and minifed in production builds, with [Babel](https://babeljs.io/).
-
-### Images
-
-- Image transformation with [`@parcel/transformer-image`](https://parceljs.org/recipes/image/) (based on [`sharp`](https://sharp.pixelplumbing.com/)).
-
-### Development
-
-- Development server launch and live reloading on file changes.
-- Friendly error reporting.
-
-## How to use this boilerplate
-
-Content lives inside the `src/` folder. If you do not want to change the configuration or are unsure about what you are doing, do not edit files outside the `src/` folder.
-
-Always run the following commands during the development stage and for production builds. Please note that it is expected that all projects built with this boilerplate are compiled using `npm run build` before they are published.
-
-### Commands
-
-| Command         | Description                                                                                                                                                                                                                                                                                                                                                         |
-| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `npm run dev`   | Runs a local web server for development and opens the browser to display it. Automatically compiles styles and scripts whenever a file in `src/` is changed, and live reloads the browser. This is what _must be run_ on the development stage.                                                                                                                     |
-| `npm run build` | Compiles and minifies and optimizes the files in the assets folder. The generated compiled and optimized files are located in the `dist/` folder. This is what _must be run_ before publishing the project. This is also the build command to be run by external deployment services such as Netlify. The publishable files are then located in the `dist/` folder. |
-| `npm run clean` | Deletes the current `/dist` folder and cache folders.                                                                                                                                                                                                                                                                                                               |
-| `npm run test`  | Displays a success message if everything is working as expected.                                                                                                                                                                                                                                                                                                    |
-
-## Need help? / Want to help out?
-
-Feel free to create a [new issue](https://github.com/uoc-advanced-html-css/uoc-boilerplate/issues/new/) or drop me a line at jorditarrida@uoc.edu.
-
-Are you using this Boilerplate for your projects or for educational purposes? I would love to hear about it!
+The practice consisted in the development of a website for a theatre company, in which to apply semantic CSS with BEM methodology. Project carried out with React. 
